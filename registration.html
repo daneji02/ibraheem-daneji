@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<style>
+h1{text-align:center;color:green;
+}
+body{background-color:#f2f2f2;
+}
+</style>
+</head>
+<body>
+<h1>REGISTRATION FORM</h1>
+<form method="post" action="application.php" id="my form">
+<label for="fname">FIRST AME:</label>
+<input type="text" id="textbox1" required/>
+<label for="middlename">MIDDLE NAME:</label>
+<input type="text" id="textbox2" required/>
+<label for="surname">SURNAME:</label>
+<input type="text" id="textbox3" required/>
+<br><label for="phonenumber">PHONE NUMBER:</label>
+<input type="number" id="textbox4" required/>
+<br><label for="email">E-MAIL:</label>
+<input type="email" id="textbox5" required/>
+<br><label for="gender">GENDER:</label>
+<input type="radio" id="radio1" value="M" name="radiobutton">
+<input type="radio" id="radio2" value="F" name="radiobutton">
+<br><label for="dob">DATE OF BIRTH:</label>
+<input type="date" id="textbox6" required/>
+<br><label for="usernams">USERNAME:</label>
+<input type="text" id="textbox7" required/>
+<br><label for="pwd">PASSWORD</label>
+<input type="password" id="textbox8" required/>
+<br><label for="Course">Courses:</label>
+<select name="courses" id="courses">
+<option value="computer studies">Computr studies</option>
+<option value="computer engineering">Computer Engineering</option>
+<option value="cyber security">Cyber security</option>
+<option value="Data science">Data Science</option>
+<option value="data analyst">Data Analyst</option>
+<option value="graphic design">Graphic Design</option>
+<option value="information technology">Information Technology</option>
+<option value="networking">Networking</option>
+<option value="operating system">Operating System</option>
+<option value="software engineering">Software Engineering</option>
+<input type="button" onclick="theFunction()" value="submit" required/>
+<input type="button" onclick="myFunction()" value="Cancel">
+</select>
+</form>
+<script>
+ function myFunction(){
+      document.getElementById("my form").reset();
+	  
+}
+function theFunction(){
+      document.getElementById("my form").innerHTML="THANK YOU FOR CHOOSING DANEJI COMPUTER TRAINING";
+}
+</script>
+</body>
+</html>
+
